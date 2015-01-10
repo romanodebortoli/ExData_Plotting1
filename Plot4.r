@@ -1,4 +1,4 @@
-setwd("C:\\Users\\Romano\\Desktop\\Coursera\\Certificate Data Analisys\\Exploratory Data\\Course Project")
+#setwd("C:\\Users\\Romano\\Desktop\\Coursera\\Certificate Data Analisys\\Exploratory Data\\Course Project")
 data<-read.table("household_power_consumption.txt", sep=";", header=TRUE)
 data$Date<-as.Date(data$Date,format='%d/%m/%Y')
 sel<-data[data$Date=="2007-02-01"|data$Date=="2007-02-02", ]
